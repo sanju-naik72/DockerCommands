@@ -1,0 +1,17 @@
+docker images
+docker ps -a
+docker build -t myimage -f Dockerfile
+docker pull ubuntu
+docker run -d --name container-name
+docker exec -it container-name bash
+docker inspect dockerimage
+docker set dockerimage
+docker create network
+docker create volume
+docker rmi $(docker images)
+docker rm -f $(docker ps -aq)
+------------------------------
+docker login
+docker build -t docker.io/username/image-name:tag -f Dockerfile(with path)
+docker push docker.io/username/image-name:tag
+docker pull docker.io/username/image-name:tag
